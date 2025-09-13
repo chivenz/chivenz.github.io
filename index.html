@@ -1,4 +1,4 @@
-<!DOCTYPE html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,15 +20,14 @@
             color: var(--text);
             scroll-behavior: smooth;
             overflow-x: hidden;
+            max-height: 100vh;
         }
-        
         #container {
             background-color: black;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             width: 100vw;
-            height: 100vh;
         }
         #header {
             width: 100vw;
@@ -70,8 +69,14 @@
             color: #ddd;
         }
         @media (max-width: 768px) {
+            #container {
+                padding: 2rem;
+            }
             #main {
-                width: 88vw;
+                width: 100vw;
+            }
+            #header {
+                padding: 0;
             }
         }
     </style>
@@ -91,5 +96,3 @@
     </div>
 </body>
 </html>
-
-
